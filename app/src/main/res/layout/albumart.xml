@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/albumart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:layout_centerInParent="true"
+        android:alpha="0.6"
+        android:src="@drawable/front1"/>
+    <TextView
+        android:id="@+id/currenttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekbar"
+        android:text="00:00"
+        android:layout_margin="5dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/totaltime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekbar"
+        android:layout_alignParentRight="true"
+        android:text="00:00"
+        android:layout_margin="5dp"
+        android:textStyle="bold"/>
+
+    <SeekBar
+        android:id="@+id/seekbar"
+
+        android:thumb="@drawable/thumbimg"
+        android:background="@android:color/transparent"
+        android:progressDrawable="@drawable/progress"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_alignBottom="@+id/albumart"/>
+</RelativeLayout>

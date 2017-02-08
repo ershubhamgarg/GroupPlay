@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="#ffffff">
+    <ImageView
+        android:id="@+id/listitemimage"
+        android:layout_width="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="7dp"
+        android:layout_height="30dp"
+        android:src="@drawable/album1"/>
+<TextView
+    android:id="@+id/nameoftrack"
+    android:text="No Music File"
+    android:layout_toRightOf="@+id/listitemimage"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:textSize="12dp"
+    android:padding="10dp"
+    android:textColor="#000000"
+    />
+</RelativeLayout>

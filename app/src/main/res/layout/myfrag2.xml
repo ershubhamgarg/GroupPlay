@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+<Button
+    android:id="@+id/broadcastbtn"
+    android:layout_width="185dp"
+    android:layout_height="match_parent"
+    android:layout_margin="2dp"
+    android:background="@android:color/transparent"
+    android:textColor="#000000"
+    android:text="Broadcast"/>
+    <Button
+        android:id="@+id/recievebtn"
+        android:layout_width="185dp"
+        android:background="@android:color/transparent"
+        android:layout_margin="2dp"
+        android:textColor="#000000"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/broadcastbtn"
+        android:text="Recieve"/>
+</RelativeLayout>

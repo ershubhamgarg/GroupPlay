@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutmain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.shubhamgarg.groupplay.MainActivity">
+
+
+    <fragment
+    android:name="com.example.shubhamgarg.groupplay.MyFrag"
+        android:id="@+id/fragment1"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:background="@android:color/transparent"
+        tools:layout="@layout/albumart"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/container_frame">
+    <fragment
+        android:id="@+id/volumefragment"
+class="com.example.shubhamgarg.groupplay.PreviousFragment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        tools:layout="@layout/volumefragment"
+        />
+    </FrameLayout>
+
+
+    <fragment
+    android:name="com.example.shubhamgarg.groupplay.Myfragtwo"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/fragment2"
+        android:layout_below="@+id/fragment1"
+        tools:layout="@layout/myfrag2"/>
+
+
+    <fragment
+        android:name="com.example.shubhamgarg.groupplay.Panel"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment3"
+        android:layout_below="@+id/fragment2"
+        tools:layout="@layout/panel"></fragment>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:backgroundTint="#cccccc"
+        android:backgroundTintMode="src_over"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@android:drawable/screen_background_light_transparent"
+        >
+
+        <ImageButton
+            android:id="@+id/listbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/list1"
+            android:background="@android:color/transparent"
+            />
+
+        <TextView
+            android:id="@+id/showname"
+            android:layout_marginLeft="30dp"
+            android:layout_width="240dp"
+            android:layout_height="60dp"
+            android:alpha="1"
+            android:fadingEdge="vertical"
+            android:gravity="center_vertical"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:lines="1"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:text="SOng name"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/search2"
+            android:background="@android:color/transparent"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+</RelativeLayout>

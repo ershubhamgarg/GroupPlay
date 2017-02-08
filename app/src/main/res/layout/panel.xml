@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/panellayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/panelbackground"
+        android:alpha="0.3"/>
+
+    <ImageButton
+        android:id="@+id/settingsbtn"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/settings"
+        android:background="@android:color/transparent"
+        />
+
+    <ImageButton
+        android:id="@+id/previous"
+        android:layout_toLeftOf="@+id/play"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/backward2"
+        android:background="@android:color/transparent"
+        />
+
+    <ImageButton
+        android:id="@+id/play"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/play2"
+        android:background="@android:color/transparent"
+        />
+    <ImageButton
+        android:id="@+id/next"
+        android:layout_toRightOf="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+
+        android:layout_marginTop="10dp"
+        android:src="@drawable/forward2"
+        android:background="@android:color/transparent">
+
+    </ImageButton>
+    <ImageButton
+        android:id="@+id/volumebtn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/volume2"
+        android:background="@android:color/transparent">
+
+    </ImageButton>
+
+</RelativeLayout>

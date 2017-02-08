@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/settingstoolbar"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="70dp"
+        android:background="@android:drawable/editbox_dropdown_light_frame"
+        >
+
+        <ImageButton
+            android:id="@+id/backbtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/backbtn2" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_marginLeft="30dp"
+            />
+    </android.support.v7.widget.Toolbar>
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Username"
+        android:inputType="text"
+        android:textCursorDrawable="@android:drawable/title_bar_tall"
+        android:background="@android:drawable/alert_light_frame"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/settingstoolbar"/>
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="300dp"
+        android:textCursorDrawable="@android:drawable/title_bar_tall"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:background="@android:drawable/alert_light_frame"
+        android:layout_below="@id/username"/>
+    <Button
+        android:id="@+id/okbtn"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:clickable="false"
+        android:layout_below="@+id/password"
+        android:text="OK"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:background="@android:drawable/picture_frame"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>
